@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = parseInt(prompt("Enter a value of a :"));
+        temp = a;
+        sum = 0;
+        n = a.length;
+        while(temp != 0){
+            sum += Math.pow(temp%10,n);
+            temp = parseInt(n/10);
+        }
+        if(a == sum){
+            alert("Number is armstrong.");
+        }else alert("Not");
+    </script>
+</body>
+</html>

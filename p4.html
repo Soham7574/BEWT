@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = parseInt(prompt("Enter a value of a :"));
+        first = 0;
+        secound = 1;
+        next = 0;
+        for(i = 1; i<=a; i++){
+            document.write(first+",");
+            next = first + secound;
+            first = secound;
+            secound = next;
+        }
+    </script>
+</body>
+</html>
